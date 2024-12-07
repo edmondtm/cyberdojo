@@ -6,6 +6,11 @@ export class Abc {
   }
 
   public canMakeWord(word: string): boolean {
+    if (!word) {
+      // edge case where word is empty
+      return true;
+    }
+
     const indexToRemove = this.blocks.findIndex(
       (block) =>
         block.includes(word[0]?.toUpperCase()) ||

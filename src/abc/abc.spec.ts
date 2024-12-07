@@ -65,6 +65,11 @@ describe('Abc', () => {
     expect(test2.canMakeWord('BKD')).toBeTruthy();
   });
 
+  it('can_make_word("")', () => {
+    const abc = new Abc([...blocks]);
+    expect(abc.canMakeWord('')).toBeTruthy();
+  });
+
   it('can_make_word("BARK")', () => {
     const abc = new Abc([...blocks]);
     expect(abc.canMakeWord('BARK')).toBeTruthy();
