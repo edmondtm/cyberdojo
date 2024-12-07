@@ -13,7 +13,7 @@ export class HundredDoors implements iHundredDoors {
 
   constructor() {
     this.doors = Array.from({ length: 100 }, () => ({
-      isOpen: false
+      isOpen: false,
     }));
     this.counter = 0;
   }

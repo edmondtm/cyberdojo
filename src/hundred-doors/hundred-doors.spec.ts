@@ -12,7 +12,6 @@ describe('HundredDoors', () => {
   });
 
   it('visit doors should toggle isOpen to n % counter', () => {
-    
     const hd = new HundredDoors();
     let beforeVisit, afterVisit;
 
