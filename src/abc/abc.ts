@@ -2,7 +2,7 @@ export class Abc {
   private blocks: Array<[string, string]>;
 
   constructor(blocks: Array<[string, string]>) {
-    this.blocks = blocks;
+    this.blocks = [...blocks];
   }
 
   public canMakeWord(word: string): boolean {
@@ -31,6 +31,6 @@ export class Abc {
   }
 
   public getBlocks(): Array<[string, string]> {
-    return this.blocks;
+    return [...this.blocks];
   }
 }
