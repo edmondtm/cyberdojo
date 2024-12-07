@@ -23,10 +23,6 @@ export class Abc {
 
     this.blocks.splice(indexToRemove, 1);
 
-    if (word.length === 1) {
-      return true;
-    }
-
     return this.canMakeWord(word.slice(1));
   }
 
